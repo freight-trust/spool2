@@ -1,0 +1,5 @@
+restylers:
+  - name: prettier                       # <-- element: flat, complete Restyler object
+    image: restyled/restyler-prettier
+    command: [prettier]
+    arguments: [--inplace]

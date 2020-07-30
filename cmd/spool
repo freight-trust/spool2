@@ -1,0 +1,32 @@
+#!/bin/bash
+
+__usage="
+Usage: $(basename $0) [OPTIONS]
+
+Options:
+  -l, --level <n>              <command>
+  -n, --pool <levels>          <command>
+  -h, --help                   <command>
+  -v, --version                <command>
+"
+
+echo "$__usage"
+
+
+printf "%s\n" "{""
+" "trailingComma": "es5","
+"  "tabWidth": 4,"
+"  "semi": false,"
+"  "singleQuote": true"
+"}"
+
+
+if [ prettier.json ]; then
+    cat <<-
+    {
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true
+}
+fi
