@@ -1,49 +1,49 @@
 {
-	"name": "@fr8/spool",
-	"version": "0.2.0",
-	"main": "index.js",
-	"description": "adversarial staking pool",
-	"license": "MPL-2.0",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/freight-trust/staking.git"
-	},
-	"author": "SEE LICENSE",
-	"bugs": {
-		"url": "https://github.com/freight-trust/staking/issues"
-	},
-	"homepage": "https://github.com/freight-trust/staking#readme",
-	"keywords": [
-		"staking",
-		"erc20",
-		"ethereum",
-		"protocol",
-		"defi"
-	],
-	"files": [
-		"*",
-		"dist"
-	],
-	"scripts": {
-		"start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
-		"lint": "node_modules/.bin/solhint \"contracts/**/*.sol\"",
-		"test": "node_modules/.bin/truffle test --network development",
-		"test-coverage": "solidity-coverage",
-		"complie": "yarn lint && node_modules/.bin/truffle complie",
-		"deploy": "yarn lint && node_modules/.bin/truffle migrate"
-	},
-	"dependencies": {
-		"dotenv": "^7.0.0",
-		"ganache-cli": "^6.4.3",
-		"truffle-hdwallet-provider": "^1.0.6",
-		"@truffle/hdwallet-provider": "1.0.39",
-		"web3": "^1.0.0-beta.52",
-		"yeoman-generator": "^3.2.0"
-	},
-	"devDependencies": {
-		"solidity-coverage": "^0.5.11",
-		"solhint": "^2.0.0",
-		"truffle": "^5.0.13",
-		"truffle-assertions": "^0.8.2"
-	}
+  "name": "@fr8/spool",
+  "version": "0.2.0",
+  "main": "index.js",
+  "description": "adversarial staking pool",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-trust/staking.git"
+  },
+  "author": "SEE LICENSE",
+  "bugs": {
+    "url": "https://github.com/freight-trust/staking/issues"
+  },
+  "homepage": "https://github.com/freight-trust/staking#readme",
+  "keywords": [
+    "staking",
+    "erc20",
+    "ethereum",
+    "protocol",
+    "defi"
+  ],
+  "files": [
+    "*",
+    "dist"
+  ],
+  "scripts": {
+    "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
+    "lint": "node_modules/.bin/solhint \"contracts/**/*.sol\"",
+    "test": "node_modules/.bin/truffle test --network development",
+    "test-coverage": "solidity-coverage",
+    "complie": "yarn lint && node_modules/.bin/truffle complie",
+    "deploy": "yarn lint && node_modules/.bin/truffle migrate"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "ganache-cli": "^6.4.3",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "@truffle/hdwallet-provider": "1.0.39",
+    "web3": "^1.0.0-beta.52",
+    "yeoman-generator": "^3.2.0"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.5.11",
+    "solhint": "^2.0.0",
+    "truffle": "^5.0.13",
+    "truffle-assertions": "^0.8.2"
+  }
 }

@@ -1,16 +1,16 @@
 {
-	"extends": "solhint:default",
-	"rules": {
-		"avoid-throw": false,
-		"avoid-suicide": "error",
-		"avoid-sha3": "warn",
-		"no-complex-fallback": "warn",
-		"indent": ["error", 4],
-		"quotes": ["error", "double"],
-		"max-line-length": ["error", 140],
-		"no-inline-assembly": false,
-		"compiler-fixed": false,
-		"func-order": false,
-		"two-lines-top-level-separator": false
-	}
+  "extends": "solhint:default",
+  "rules": {
+    "avoid-throw": false,
+    "avoid-suicide": "error",
+    "avoid-sha3": "warn",
+    "no-complex-fallback": "warn",
+    "indent": ["error", 4],
+    "quotes": ["error", "double"],
+    "max-line-length": ["error", 140],
+    "no-inline-assembly": false,
+    "compiler-fixed": false,
+    "func-order": false,
+    "two-lines-top-level-separator": false
+  }
 }
