@@ -127,7 +127,7 @@ This method is totally encouraged. As are all methods of manipulation. Proof of 
 
 Token holders control the contract via a mechanism that allows for voting on the operator of the contract who may start and stop the `round` and change the fee percent. This is a _planned_ feature, and would correspond to a switch to a `floating exchange rate` for \$EDI, as related to [PEM rfc/issues/5](https://github.com/freight-chain/rfc/issues/5).
 
-> Note: Governance tokens are not tradeable, nor transferable. The only way you can get governance tokens would be through \$EDI. There is immediate implementation planned for governance decentralization until this implementation has proven to be a robust one.
+> Note: Governance tokens are not tradeable, nor transferable. The only way you can get governance tokens would be through \$EDI. There is no immediate implementation planned for governance decentralization until this implementation has proven to be a robust one.
 
 ##### Stability Fund
 
