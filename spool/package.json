@@ -4,7 +4,7 @@
 	"description": "staking pool ",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "waffle && mocha"
 	},
 	"author": "",
 	"license": "ISC",
@@ -13,6 +13,8 @@
 	},
 	"devDependencies": {
 		"@openzeppelin/contracts": "^3.1.0",
-		"ethereum-waffle": "^3.0.2"
+		"chai": "^4.2.0",
+		"ethereum-waffle": "^3.0.2",
+		"mocha": "^8.0.1"
 	}
 }

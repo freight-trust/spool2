@@ -1,0 +1,5 @@
+{
+  "sourceDirectory": "./custom_contracts",
+  "outputDirectory": "./custom_build",
+  "nodeModulesDirectory": "./custom_node_modules"
+}
