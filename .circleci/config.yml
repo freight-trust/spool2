@@ -1,0 +1,40 @@
+version: 2.0
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          name: Save Cache Dependencies
+          paths:
+            - ./node_modules
+          key: v2-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Check Lint
+          command: yarn lint
+      - run:
+          name: Test Contract
+          command: yarn test-coverage
+      - store_artifacts:
+          name: Store Artifacts Test Result
+          path: coverage
+          destination: test-result
+      - run:
+          name: Deploy Contract to Rinkeby
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+            then
+              echo deploy
+              # yarn deploy --network rinkeby
+            else
+              echo deploy
+            fi
